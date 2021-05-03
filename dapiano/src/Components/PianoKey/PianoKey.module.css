@@ -1,0 +1,23 @@
+.blackTile {
+  z-index: 2;
+  height: 15vh;
+  width: 100%;
+  border-style: solid;
+  background-color: black;
+  border-width: 5px;
+}
+
+.whiteTile {
+  z-index: 1;
+  height: 20vh;
+  width: 5vh;
+  border-style: solid;
+  border-color: black;
+  border-width: 1%;
+  background-color: white;
+}
+
+.textt {
+  /* font-size: x-small; */
+  color: blue;
+}
