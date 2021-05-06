@@ -17,6 +17,21 @@ const Piano = () => {
 
   const filePathD: string = "/audio/ipullup.mp3";
   const [playD] = useSound(filePathD, { volume: 0.25 });
+
+  const filePathE: string = "/audio/nocap.mp3";
+  const [playE] = useSound(filePathE, { volume: 0.25 });
+
+  const filePathF: string = "/audio/youknowitsbaby.mp3";
+  const [playF] = useSound(filePathF, { volume: 0.25 });
+
+  const filePathG: string = "/audio/ha2.mp3";
+  const [playG] = useSound(filePathG, { volume: 0.25 });
+
+  const filePathH: string = "/audio/hot.mp3";
+  const [playH] = useSound(filePathH, { volume: 0.25 });
+
+  const filePathI: string = "/audio/okay.mp3";
+  const [playI] = useSound(filePathI, { volume: 0.25 });
   const handleKeyPress = (key: string) => {
     switch (key) {
       case "a":
@@ -31,31 +46,51 @@ const Piano = () => {
       case "d":
         playD();
         break;
-    }
-    if (key === "a") {
-      playA();
+      case "e":
+        playE();
+        break;
+      case "f":
+        playF();
+        break;
+      case "g":
+        playG();
+        break;
+      case "h":
+        playH();
+        break;
+      case "i":
+        playI();
+        break;
     }
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <KeyboardEventHandler
-        handleKeys={["a", "b", "c", "d"]}
+        handleKeys={["a", "b", "c", "d", "e", "f", "g", "h", "i"]}
         onKeyEvent={(key: any, e: any) => handleKeyPress(key)}
       />
-      <div className={styles.container}>
-        <PianoKey keyToPress={"a"} soundEffect={"letsgo"}></PianoKey>
-        <PianoKey keyToPress={"b"} soundEffect={"ha"}></PianoKey>
-        <PianoKey keyToPress={"c"} soundEffect={"yeahyeah"}></PianoKey>
-        <PianoKey keyToPress={"d"} soundEffect={"ipullup"}></PianoKey>
-      </div>
-      <div className={styles.footerContainer}>
-        <p>Created with 🎶 and 🥁 by Anjan Bharadwaj</p>
-        <p>
-          Check out this project on{" "}
-          <a href="https://github.com/anjanbharadwaj/DaWebsite">GitHub</a>
-        </p>
-      </div>
+      <PianoKey tileType={1} keyToPress={"a"} soundEffect={"letsgo"}></PianoKey>
+      <PianoKey tileType={1} keyToPress={"b"} soundEffect={"ha"}></PianoKey>
+      <PianoKey
+        tileType={1}
+        keyToPress={"c"}
+        soundEffect={"yeahyeah"}
+      ></PianoKey>
+      <PianoKey
+        tileType={1}
+        keyToPress={"d"}
+        soundEffect={"ipullup"}
+      ></PianoKey>
+      <PianoKey tileType={1} keyToPress={"e"} soundEffect={"nocap"}></PianoKey>
+      <PianoKey
+        tileType={1}
+        keyToPress={"f"}
+        soundEffect={"youknowitsbaby"}
+      ></PianoKey>
+      <PianoKey tileType={1} keyToPress={"g"} soundEffect={"ha2"}></PianoKey>
+      <PianoKey tileType={1} keyToPress={"h"} soundEffect={"hot"}></PianoKey>
+      <PianoKey tileType={1} keyToPress={"i"} soundEffect={"okay"}></PianoKey>
     </div>
   );
 };

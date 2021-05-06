@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
 }
 
 .App-logo {
