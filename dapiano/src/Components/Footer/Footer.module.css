@@ -1,6 +1,6 @@
 .footerContainer {
   text-align: center;
-  margin-top: 25%;
-  padding-top: 100px;
+  /* padding-top: 100px; */
   flex: 1;
+  background-color: yellow;
 }

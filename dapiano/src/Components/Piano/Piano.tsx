@@ -84,13 +84,13 @@ const Piano = () => {
       ></PianoKey>
       <PianoKey tileType={1} keyToPress={"e"} soundEffect={"nocap"}></PianoKey>
       <PianoKey
-        tileType={1}
+        tileType={2}
         keyToPress={"f"}
         soundEffect={"youknowitsbaby"}
       ></PianoKey>
-      <PianoKey tileType={1} keyToPress={"g"} soundEffect={"ha2"}></PianoKey>
-      <PianoKey tileType={1} keyToPress={"h"} soundEffect={"hot"}></PianoKey>
-      <PianoKey tileType={1} keyToPress={"i"} soundEffect={"okay"}></PianoKey>
+      <PianoKey tileType={2} keyToPress={"g"} soundEffect={"ha2"}></PianoKey>
+      <PianoKey tileType={2} keyToPress={"h"} soundEffect={"hot"}></PianoKey>
+      <PianoKey tileType={2} keyToPress={"i"} soundEffect={"okay"}></PianoKey>
     </div>
   );
 };

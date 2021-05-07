@@ -52,7 +52,7 @@ const PianoKey = (props: KeyProps) => {
 
   return (
     <div className={styles.container}>
-      <button className={styles.whiteTile} onClick={() => play()}>
+      <button className={tileStyle} onClick={() => play()}>
         {props.keyToPress}
       </button>
     </div>

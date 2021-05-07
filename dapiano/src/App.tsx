@@ -8,6 +8,8 @@ function App() {
   // return <Piano />;
   return (
     <div className="App">
+      {/* <div className="a"></div>
+      <div className="b"></div> */}
       <Piano />
       <Footer />
     </div>
