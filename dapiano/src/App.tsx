@@ -3,13 +3,13 @@ import logo from "./logo.svg";
 import "./App.css";
 import Piano from "./Components/Piano/Piano";
 import Footer from "./Components/Footer/Footer";
-
+import Header from "./Components/Header/Header";
+// import DaBaby from "dababy_cursor.jpeg";
 function App() {
   // return <Piano />;
   return (
     <div className="App">
-      {/* <div className="a"></div>
-      <div className="b"></div> */}
+      <Header />
       <Piano />
       <Footer />
     </div>

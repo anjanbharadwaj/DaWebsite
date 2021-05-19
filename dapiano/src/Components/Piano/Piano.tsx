@@ -70,7 +70,7 @@ const Piano = () => {
 
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.whiteContainer}>
+      <div className={styles.piano}>
         <KeyboardEventHandler
           handleKeys={["a", "b", "c", "d", "e", "f", "g", "h", "i"]}
           onKeyEvent={(key: any, e: any) => handleKeyPress(key)}
@@ -80,33 +80,34 @@ const Piano = () => {
           keyToPress={"a"}
           soundEffect={"letsgo"}
         ></PianoKey>
+        <PianoKey
+          tileType={2}
+          keyToPress={"f"}
+          soundEffect={"youknowitsbaby"}
+        ></PianoKey>
         <PianoKey tileType={1} keyToPress={"b"} soundEffect={"ha"}></PianoKey>
+        <PianoKey tileType={2} keyToPress={"g"} soundEffect={"ha2"}></PianoKey>
         <PianoKey
           tileType={1}
           keyToPress={"c"}
           soundEffect={"yeahyeah"}
         ></PianoKey>
+        <PianoKey tileType={2} keyToPress={"h"} soundEffect={"hot"}></PianoKey>
         <PianoKey
           tileType={1}
           keyToPress={"d"}
           soundEffect={"ipullup"}
         ></PianoKey>
+        <PianoKey tileType={2} keyToPress={"i"} soundEffect={"okay"}></PianoKey>
         <PianoKey
           tileType={1}
           keyToPress={"e"}
           soundEffect={"nocap"}
         ></PianoKey>
       </div>
-      <div className={styles.blackContainer}>
-        <PianoKey
-          tileType={2}
-          keyToPress={"f"}
-          soundEffect={"youknowitsbaby"}
-        ></PianoKey>
-        <PianoKey tileType={2} keyToPress={"g"} soundEffect={"ha2"}></PianoKey>
-        <PianoKey tileType={2} keyToPress={"h"} soundEffect={"hot"}></PianoKey>
-        <PianoKey tileType={2} keyToPress={"i"} soundEffect={"okay"}></PianoKey>
-      </div>
+      {/* <div className={styles.blackContainer}>
+        
+      </div> */}
     </div>
   );
 };

@@ -1,26 +1,29 @@
 .blackTile {
-  z-index: 2;
-  height: 66.6%;
-  width: 66.6%;
   border-style: solid;
-  background-color: black;
   border-color: black;
   border-width: 5px;
-  flex: 1;
+  z-index: 2;
+  height: 75%;
+  width: 10%;
   color: white;
+  background-color: black;
+  margin: 0% -5% 0% -5%;
 }
 
 .whiteTile {
-  z-index: 1;
-  /* width: 20vw; */
-  width: 100%;
-  height: 100%;
-  /* width: 10vh; */
   border-style: solid;
   border-color: black;
-  border-width: 1%;
+  border-width: 2.5px;
+  z-index: 1;
+  height: 100%;
+  width: 15%;
   background-color: white;
 }
-.container {
+
+.tile {
+  border-style: solid;
+  border-color: black;
   flex: 1;
+  display: inline-flex;
+  align-items: center;
 }

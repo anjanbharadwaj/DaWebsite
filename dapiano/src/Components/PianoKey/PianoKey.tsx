@@ -28,11 +28,9 @@ const PianoKey = (props: KeyProps) => {
   }
 
   return (
-    <div className={styles.container}>
-      <button className={tileStyle} onClick={(e) => playWrapper(e)}>
-        {props.keyToPress}
-      </button>
-    </div>
+    <button className={tileStyle} onClick={(e) => playWrapper(e)}>
+      {props.keyToPress}
+    </button>
   );
   // return <h1>{props.soundEffect}</h1>;
 };
