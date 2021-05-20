@@ -1,5 +1,3 @@
-import React, { Component } from "react";
-import { useState, useEffect } from "react";
 import PianoKey from "../PianoKey/PianoKey";
 import styles from "../Piano/Piano.module.css";
 import useSound from "use-sound";

@@ -1,4 +1,3 @@
-import React, { Component, useEffect } from "react";
 import useSound from "use-sound";
 import styles from "../PianoKey/PianoKey.module.css";
 enum TileType {
