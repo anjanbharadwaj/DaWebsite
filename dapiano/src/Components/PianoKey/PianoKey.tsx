@@ -20,6 +20,8 @@ const PianoKey = (props: KeyProps) => {
   const [play] = useSound(filePath, pianoOptions);
   const playWrapper = (event) => {
     event.currentTarget.blur();
+    const element = event.currentTarget;
+    element.classList.toggle("mystyle");
     play();
   };
   let tileStyle = styles.whiteTile;

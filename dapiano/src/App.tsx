@@ -4,13 +4,13 @@ import "./App.css";
 import Piano from "./Components/Piano/Piano";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
-// import DaBaby from "dababy_cursor.jpeg";
 function App() {
   // return <Piano />;
   return (
     <div className="App">
       <Header />
       <Piano />
+      <hr className="divider"></hr>
       <Footer />
     </div>
   );

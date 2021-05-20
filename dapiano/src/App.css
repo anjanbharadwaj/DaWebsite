@@ -1,12 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 .App {
   text-align: center;
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
   display: flex;
   flex-flow: column nowrap;
   height: 100vh;
-  cursor: url("dababy_cursor.jpeg"), auto;
+  cursor: url("https://i.imgur.com/FcUgMwy_d.webp?maxwidth=760&fidelity=grand"),
+    auto;
+  font-family: "Raleway", sans-serif;
 }
 
 .App-logo {
@@ -44,11 +44,6 @@
   }
 }
 
-.a {
-  flex: 9;
-  background-color: blue;
-}
-.b {
-  flex: 1;
-  background-color: yellow;
+.divider {
+  width: 90%;
 }
